@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Openhour:</strong>
+  <%= @room.openHour %>
+</p>
+
+<p>
+  <strong>Closehour:</strong>
+  <%= @room.closeHour %>
+</p>
+
+<%= link_to 'Edit', edit_room_path(@room) %> |
+<%= link_to 'Back', rooms_path %>

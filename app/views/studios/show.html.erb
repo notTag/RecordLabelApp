@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Studioname:</strong>
+  <%= @studio.studioName %>
+</p>
+
+<p>
+  <strong>Lunchhours:</strong>
+  <%= @studio.lunchHours %>
+</p>
+
+<p>
+  <strong>Numberrooms:</strong>
+  <%= @studio.numberRooms %>
+</p>
+
+<%= link_to 'Edit', edit_studio_path(@studio) %> |
+<%= link_to 'Back', studios_path %>

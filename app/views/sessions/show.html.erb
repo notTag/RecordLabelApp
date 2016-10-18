@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bandname:</strong>
+  <%= @session.bandName %>
+</p>
+
+<p>
+  <strong>Sessiondate:</strong>
+  <%= @session.sessionDate %>
+</p>
+
+<p>
+  <strong>Sessiontime:</strong>
+  <%= @session.sessionTime %>
+</p>
+
+<p>
+  <strong>Sessionlength:</strong>
+  <%= @session.sessionLength %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @session.comments %>
+</p>
+
+<%= link_to 'Edit', edit_session_path(@session) %> |
+<%= link_to 'Back', sessions_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bandName: MyString
+  sessionDate: 2016-10-18
+  sessionTime: 2016-10-18 14:29:22
+  sessionLength: 1
+  comments: MyText
+
+two:
+  bandName: MyString
+  sessionDate: 2016-10-18
+  sessionTime: 2016-10-18 14:29:22
+  sessionLength: 1
+  comments: MyText

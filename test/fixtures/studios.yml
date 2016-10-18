@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studioName: MyString
+  lunchHours: 2016-10-16 23:53:11
+  numberRooms: 1
+
+two:
+  studioName: MyString
+  lunchHours: 2016-10-16 23:53:11
+  numberRooms: 1
