@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+h1{
+	color: white;
+}
+body{
+	background: url("/assets/darkBlueTriangle.jpg");
+	color: white;
+}
+a{
+	color: white;
+}
+a:hover{
+	background-color: rgba(0,0,0,0);
+	border: solid 1px yellow;
+}
+a:visited{
+	color: white;
+}
+
+table{
+	color: white;
+}
+th{
+	border: solid 1px black;
+}
+thead:hover{
+	background-color: rgba(0,0,0,0) !important;
+}
+td{
+	padding: 10px;
+    text-align: center;
+}
+/*td:hover{
+	background-color: #33333
+}*/
+tbody>tr:hover{
+	background-color: #66b3ff;
+}
+

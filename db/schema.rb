@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161018183330) do
+ActiveRecord::Schema.define(version: 20161018234937) do
 
   create_table "rooms", force: :cascade do |t|
     t.string   "openHour",   limit: 255
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20161018183330) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "type",          limit: 255
+    t.string   "userType",      limit: 255
     t.string   "name",          limit: 255
     t.string   "contactNumber", limit: 255
     t.datetime "created_at",                null: false

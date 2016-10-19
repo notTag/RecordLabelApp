@@ -15,7 +15,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.type %></td>
+        <td><%= user.userType %></td>
         <td><%= user.name %></td>
         <td><%= user.contactNumber %></td>
         <td><%= link_to 'Show', user %></td>
@@ -28,4 +28,6 @@
 
 <br>
 
+<%= link_to 'New Studio', new_studio_path %>
 <%= link_to 'New User', new_user_path %>
+<%= link_to 'New Session', new_session_path %>
