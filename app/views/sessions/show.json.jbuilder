@@ -1,1 +1,1 @@
-json.extract! @session, :id, :bandName, :sessionDate, :sessionTime, :sessionLength, :comments, :created_at, :updated_at
+json.extract! @session, :id, :bandName, :sessionDate, :sessionLength, :comments, :created_at, :updated_at

@@ -1,5 +1,36 @@
 <h1>New Session</h1>
 
 <%= render 'form' %>
-
-<%= link_to 'Back', sessions_path %>
+<!-- <%= link_to('Click here', controller: 'sessions', action: 'new', message: 'Welcome!') %> -->
+<% if flash[:alert] %>
+	<div class="alert"><%= flash[:alert] %></div>
+<% end %>
+<div>
+	<table>
+	  <thead>
+	  	<tr>
+	  		<th colspan = 5>
+	  			Sessions already booked.
+			</th>
+		</tr>
+	    <tr>
+	      <!-- <th colspan="1"></th> -->
+	      <th>Band Name</th>
+	      <th>Session Date</th>
+	      <th>Session Length</th>
+	    </tr>
+	  </thead>
+	
+	  <tbody>
+	    <% @sessions.each do |session| %>
+	      <tr>
+	      	<!-- <td><%= radio_button_tag(:timeslot, session.sessionDate) %></td> -->
+	        <td><%= session.bandName %></td>
+	        <td><%= session.sessionDate %></td>
+	        <td><%= session.sessionLength %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+</div>
+<%= link_to 'List Sessions', sessions_path %>

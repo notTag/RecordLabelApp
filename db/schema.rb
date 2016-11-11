@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161018234937) do
+ActiveRecord::Schema.define(version: 20161021222254) do
 
   create_table "rooms", force: :cascade do |t|
     t.string   "openHour",   limit: 255
@@ -22,12 +22,11 @@ ActiveRecord::Schema.define(version: 20161018234937) do
 
   create_table "sessions", force: :cascade do |t|
     t.string   "bandName",      limit: 255
-    t.date     "sessionDate"
-    t.time     "sessionTime"
+    t.datetime "sessionDate",
     t.integer  "sessionLength", limit: 4
     t.text     "comments",      limit: 65535
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "studios", force: :cascade do |t|

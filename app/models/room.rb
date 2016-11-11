@@ -1,4 +1,4 @@
 class Room < ActiveRecord::Base
    belongs_to :studio
-   has_many :sessions
+   belongs_to :session
 end

@@ -20,6 +20,18 @@ h1{
 body{
 	background: url("/assets/darkBlueTriangle.jpg");
 	color: white;
+	text-align: center;
+}
+table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+input{
+    text-align: center;
+    width: 20%;
+}
+textarea{
+	width: 20%;
 }
 a{
 	color: white;

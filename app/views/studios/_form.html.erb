@@ -12,16 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :studioName %><br>
+	<label>Studio Name</label><br>
     <%= f.text_field :studioName %>
   </div>
   <div class="field">
-    <%= f.label :lunchHours %><br>
-    <%= f.time_select :lunchHours %>
+    <label>Number Of Rooms</label><br>
+    <%= f.number_field :numberRooms %>
   </div>
   <div class="field">
-    <%= f.label :numberRooms %><br>
-    <%= f.number_field :numberRooms %>
+    <label>Lunch Hour</label><br>
+    <%= f.time_select :lunchHours %>
   </div>
   <div class="actions">
     <%= f.submit %>
